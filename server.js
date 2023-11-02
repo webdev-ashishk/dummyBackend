@@ -847,10 +847,10 @@ const users = [
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to my Backend course</h1>");
 });
-app.get("/blogs", (req, res) => {
+app.get("/api/v1/blogs", (req, res) => {
   res.json(blog);
 });
-app.get("/users", (req, res) => {
+app.get("/api/v1/users", (req, res) => {
   res.json(users);
 });
 
